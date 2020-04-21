@@ -3,6 +3,12 @@ const foxley = {
   species: "",
   nicknames: [],
   age: 0,
+  favoriteToys: [],
+  play: function play(toy) {
+    if ("soft" in toy) {
+      this.favoriteToys.push(toy);
+    }
+  },
   whimper: function () {
     window.alert("~whimper~");
   },
@@ -17,3 +23,5 @@ const foxley = {
 foxley.bark();
 foxley.whimper();
 foxley.growl();
+
+foxley.play("soft bunny");
