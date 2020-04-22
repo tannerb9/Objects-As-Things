@@ -5,7 +5,7 @@ const foxley = {
   age: 0,
   favoriteToys: [],
   play: function play(toy) {
-    if ("soft" in toy) {
+    if (toy.includes("soft")) {
       this.favoriteToys.push(toy);
     }
   },
